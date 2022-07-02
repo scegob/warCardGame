@@ -1,0 +1,10 @@
+html {
+    background: rgba(255, 0, 0, 0.3) /* Green background with 30% opacity */
+  }
+
+.war {
+    height: 400px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}

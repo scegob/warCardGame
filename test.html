@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <!-- this .css is to make it look pretty for us to read the test -->
+        <link rel="stylesheet" href="node_modules/mocha/mocha.css"> 
+    </head>
+    <body>
+        <div id="mocha"><p><a href=".">Index</a></p></div>
+        <div id="messages"></div>
+        <div id="fixtures"></div>
+        <script src="node_modules/mocha/mocha.js"></script>
+        <script src="node_modules/chai/chai.js"></script> <!--Need these in this order-->
+        <!--<script src="war.js"></script> --> <!--Add our application code-->
+        <script>mocha.setup('bdd')</script> <!--Describes the type of test we're running-->
+        <script src="./unitTest.js"></script>
+        <script>mocha.run();</script> <!--This is going to run our test-->
+    </body>
+</html>
